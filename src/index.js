@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let guests = [];
   let sortAsc = true;
 
-  // Add a new guest
+  // Add new guest
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const name = nameInput.value.trim();
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Create a guest object
+    // Create guest object
     const guest = {
       name,
       category,
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderGuests();
   });
 
-  // Render all guests (filtered, searched, and sorted)
+  //filter search and sort
   function renderGuests() {
     guestList.innerHTML = "";
 
